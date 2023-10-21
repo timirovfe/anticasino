@@ -7,6 +7,10 @@ body, html {
   line-height: 31px;
 }
 
+*,::after,::before {
+  box-sizing: border-box
+}
+
 .container {
   padding: 0 25px;
   max-width: 1590px;
