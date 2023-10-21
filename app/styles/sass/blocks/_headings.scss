@@ -1,0 +1,23 @@
+h1, .h1-title {
+  font-family: 'Sports World';
+  font-size: 34px;
+  @include sm-block {
+    font-size: 32px;
+  }
+}
+
+h2, .h2-title {
+  font-family: 'Sports World';
+  font-size: 25px;
+}
+
+h3, .h3-title {
+  font-family: 'Sports World';
+  font-size: 24px;
+}
+
+h1, h2, h3, h3-title, .h2-title, .h1-title {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}

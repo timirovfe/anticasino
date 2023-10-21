@@ -1,0 +1,240 @@
+body, html {
+  color: $main;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.container {
+  padding: 0 25px;
+  max-width: 1590px;
+  margin: 0 auto;
+  @include sm-block {
+    padding: 0 10px;
+    max-width: 1560px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-color: $transparent;
+  transition: text-decoration-color 0.3s;
+}
+
+button {
+  background: $transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  height: 7px;
+  background-color: $black;
+  width: 100%;
+}
+
+.main {
+  padding: 46px 0 93px;
+  @include xl-block {
+    padding: 0 0 93px;
+  }
+}
+
+.news {
+  min-width: 0;
+}
+
+.news-slider {
+  @include xl-block {
+    margin: 0 -25px;
+  }
+  @include sm-block {
+    margin: 0 -10px;
+  }
+}
+
+.news-section {
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__subtitle {
+    padding-bottom: 16px;
+  }
+}
+
+.news-block {
+  border-top: 3px solid $black;
+  padding: 39px 0;
+  @include sm-block {
+    padding: 32px 0;
+  }
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &__title {
+    margin-bottom: 29px;
+  }
+
+  &__wrap {
+    display: flex;
+    @include xxl-block {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__date {
+    font-family: 'Sports World';
+    font-size: 18px;
+    margin-bottom: 31px;
+    color: $black;
+    @include xxl-block {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    margin-left: 33px;
+    flex-shrink: 0;
+    @include xxl-block {
+      margin-left: 0;
+    }
+
+    img {
+      margin-top: -35px;
+      max-width: 335px;
+      width: 100%;
+      @include xxl-block {
+        margin-top: 0;
+        margin-bottom: 26px;
+      }
+      @include sm-block {
+        max-width: inherit;
+      }
+    }
+  }
+}
+
+.news-wrap {
+  @include xl-block {
+    padding-bottom: 103px;
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;
+
+    @include xl-block {
+      margin: 40px auto 0 auto;
+    }
+  }
+}
+
+.main-wrap {
+  display: flex;
+  @include xl-block {
+    display: block;
+  }
+}
+
+.side-contacts {
+  max-width: 590px;
+  flex-shrink: 0;
+  width: 100%;
+  margin-left: 95px;
+  @include xxl-block {
+    margin-left: 40px;
+  }
+  @include xl-block {
+    max-width: inherit;
+    margin-left: 0;
+  }
+
+  &__title {
+    padding-bottom: 8px;
+  }
+
+  &__subtitle {
+    margin: 22px 0 60px;
+    @include sm-block {
+      margin: 22px 0 55px;
+    }
+  }
+}
+
+.company-block {
+  margin-top: 40px;
+
+  &__title {
+    font-size: 24px;
+    font-family: 'Sports World';
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: 3px solid $black;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 27px;
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-top: 42px;
+    }
+  }
+
+  &__link {
+    color: $violet;
+
+    &:hover {
+      text-decoration-color: $violet;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    display: block;
+    @include xl-block {
+      margin: 0 auto;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      img {
+        width: 62px;
+        height: 62px;
+        margin-right: 25px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

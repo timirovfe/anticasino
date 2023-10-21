@@ -1,0 +1,27 @@
+.btn {
+  font-family: 'Sports World';
+  font-size: 26px;
+  padding: 16px 20px;
+  background: $violet;
+  color: $white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  @include sm-block {
+    font-size: 25px;
+  }
+
+  &:hover {
+    background: $white;
+    color: $violet;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+    color: $black;
+
+    &:hover {
+      background: $black;
+      color: $yellow;
+    }
+  }
+}

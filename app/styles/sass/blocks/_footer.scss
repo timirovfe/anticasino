@@ -1,0 +1,52 @@
+.footer {
+  background: url("../images/dist/footer-background.jpg") 0px 0px no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0 24px;
+
+  &__logo {
+    max-height: 165px;
+  }
+}
+
+.footer-links {
+  margin: 21px 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 17px;
+
+  li {
+    margin: 0 20px;
+  }
+
+  &__link {
+    color: $white;
+    text-transform: uppercase;
+    @include sm-block {
+      font-size: 25px;
+    }
+
+    &:hover {
+      text-decoration-color: $white;
+    }
+  }
+}
+
+.footer-social {
+  &__link {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      @include sm-block {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+}
