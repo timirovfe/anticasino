@@ -99,6 +99,9 @@ button {
 
   &__title {
     margin-bottom: 29px;
+    &:hover {
+      text-decoration-color: $black;
+    }
   }
 
   &__wrap {
